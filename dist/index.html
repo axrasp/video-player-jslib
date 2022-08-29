@@ -5,42 +5,40 @@
   <link rel="stylesheet" href="css/all.css">
   <meta charset="utf-8">
   <style type="text/css">
-    button.player {
+    button.player_btn {
       color: white;
       border: none;
       background: transparent;
     }
+    .player {
+      background: black;
+      width: 800px;
+      height: 600px;
+    }
+    .full-w-h {
+    width: 100%;
+    height: 100%
+    }
+
   </style>
 
 </head>
 <body>
-  <div style="width: 800px">
-    <div id="player" style="width: 800px; height: 600px;">
+  <div id="player" class="player">
 
-      <div class="js-video-container" style="width: 100%; height: 100%"></div>
+    <div class="js-video-container full-w-h"></div>
 
-      <div style="background: black">
-        <button class="js-play-button player fa-solid fa-play">
-          <i class="fa-solid fa-play"></i>
-        </button>
-        <button class="js-pause-button player" hidden>
-          <i class="fa-solid fa-pause"></i>
-        </button>
-        <button class="js-volume-button player">Volume</button>
-        <button class="js-mute-button player" hidden>Mute</button>
-        <button class="js-fullscreen-button player">Fullscreen</button>
-      </div>
-      <div style="color: white;">
-        <span class="js-current-time"></span>
-        —
-        <span class="js-duration"></span>
-      </div>
-
-      <div class="js-progress" style="background-color: grey;">
-        <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
-      </div>
+    <div style="background: black">
+      <button class="js-play-button player_btn">
+        <i class="fa-solid fa-play"></i>
+      </button>
+      <button class="js-pause-button player_btn" hidden>
+        <i class="fa-solid fa-pause"></i>
+      </button>
+      <button class="js-volume-button player_btn">Volume</button>
+      <button class="js-mute-button player_btn" hidden>Mute</button>
+      <button class="js-fullscreen-button player_btn">Fullscreen</button>
     </div>
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
@@ -51,6 +49,7 @@
       elementId: 'player',
     });
   </script>
+  </div>
 
 </body>
 </html>
