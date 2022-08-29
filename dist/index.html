@@ -5,19 +5,34 @@
   <link rel="stylesheet" href="css/all.css">
   <meta charset="utf-8">
   <style type="text/css">
-    button.player_btn {
+    .player-control {
+      display: flex;
+      flex-direction: row;
+    }
+    button.player-btn {
       color: white;
       border: none;
       background: transparent;
+      font-size: medium;
+    }
+    button.btn-right {
+      color: white;
+      border: none;
+      text-align: end;
+      background: transparent;
+      font-size: medium;
+      flex-grow: 1;
     }
     .player {
       background: black;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
       width: 800px;
       height: 600px;
+      display: flex;
+      flex-direction: column;
     }
     .full-w-h {
-    width: 100%;
-    height: 100%
+    flex-grow: 1;
     }
 
   </style>
@@ -28,16 +43,22 @@
 
     <div class="js-video-container full-w-h"></div>
 
-    <div style="background: black">
-      <button class="js-play-button player_btn">
+    <div class="player-control">
+      <button class="js-play-button player-btn">
         <i class="fa-solid fa-play"></i>
       </button>
-      <button class="js-pause-button player_btn" hidden>
+      <button class="js-pause-button player-btn" hidden>
         <i class="fa-solid fa-pause"></i>
       </button>
-      <button class="js-volume-button player_btn">Volume</button>
-      <button class="js-mute-button player_btn" hidden>Mute</button>
-      <button class="js-fullscreen-button player_btn">Fullscreen</button>
+      <button class="js-volume-button player-btn">
+        <i class="fa-solid fa-volume-high"></i>
+      </button>
+      <button class="js-mute-button player-btn" hidden>
+        <i class="fa-solid fa-volume-xmark"></i>
+      </button>
+      <button class="js-fullscreen-button btn-right">
+        <i class="fa-solid fa-expand"></i>
+      </button>
     </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
