@@ -10,18 +10,22 @@
       flex-direction: row;
     }
     button.player-btn {
+      cursor: pointer;
       color: white;
       border: none;
       background: transparent;
-      font-size: medium;
+      font-size: large;
+      margin: 5px;
+      height: 30px;
+      width: 30px;
     }
     button.btn-right {
+      cursor: pointer;
       color: white;
       border: none;
       text-align: end;
       background: transparent;
-      font-size: medium;
-      flex-grow: 1;
+      font-size: large;
     }
     .player {
       background: black;
@@ -56,6 +60,8 @@
       <button class="js-mute-button player-btn" hidden>
         <i class="fa-solid fa-volume-xmark"></i>
       </button>
+      <div class="full-w-h">
+      </div>
       <button class="js-fullscreen-button btn-right">
         <i class="fa-solid fa-expand"></i>
       </button>
