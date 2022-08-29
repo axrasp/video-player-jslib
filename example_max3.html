@@ -4,31 +4,19 @@
   <title>Title</title>
   <link rel="stylesheet" href="css/all.css">
   <meta charset="utf-8">
-  <style type="text/css">
-    button.player {
-      color: white;
-      border: none;
-      background: transparent;
-    }
-  </style>
-
 </head>
 <body>
-  <div style="width: 800px">
+  <div style="background: black; width: 800px">
     <div id="player" style="width: 800px; height: 600px;">
 
       <div class="js-video-container" style="width: 100%; height: 100%"></div>
 
-      <div style="background: black">
-        <button class="js-play-button player fa-solid fa-play">
-          <i class="fa-solid fa-play"></i>
-        </button>
-        <button class="js-pause-button player" hidden>
-          <i class="fa-solid fa-pause"></i>
-        </button>
-        <button class="js-volume-button player">Volume</button>
-        <button class="js-mute-button player" hidden>Mute</button>
-        <button class="js-fullscreen-button player">Fullscreen</button>
+      <div>
+        <button class="js-play-button fa-solid fa-play"></button>
+        <button class="js-pause-button" hidden>Pause</button>
+        <button class="js-volume-button">Volume</button>
+        <button class="js-mute-button" hidden>Mute</button>
+        <button class="js-fullscreen-button">Fullscreen</button>
       </div>
       <div style="color: white;">
         <span class="js-current-time"></span>
