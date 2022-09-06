@@ -36,8 +36,18 @@
       background: transparent;
       font-size: large;
       margin: 5px;
-      height: 30px;
-      width: 30px;
+      height: 35px;
+      width: 20px;
+    }
+    .player .volume-btn {
+      color: white;
+      border: none;
+      background: transparent;
+      font-size: medium;
+      margin: 5px;
+      height: 35px;
+      width: 40px;
+
     }
     .player .right-buttons {
       cursor: pointer;
@@ -45,9 +55,14 @@
       border: none;
       text-align: end;
       background: transparent;
+      height: 35px;
       font-size: large;
+      margin: 5px;
     }
     .screen {
+    flex-grow: 1;
+    }
+    .player .viewing-panel {
     flex-grow: 1;
     }
   </style>
@@ -60,21 +75,21 @@
 
     <div class="bottom-controls">
       <button class="js-play-button left-buttons">
-        <i class="fa-solid fa-play"></i>
+        <i class="fa-sharp fa-solid fa-play"></i>
       </button>
       <button class="js-pause-button left-buttons" hidden>
         <i class="fa-solid fa-pause"></i>
       </button>
-      <button class="js-volume-button left-buttons">
+      <button class="js-volume-button left-buttons volume-btn">
         <i class="fa-solid fa-volume-xmark"></i>
       </button>
-      <button class="js-mute-button left-buttons" hidden>
+      <button class="js-mute-button volume-btn" hidden>
         <i class="fa-solid fa-volume-high"></i>
       </button>
-      <div class="screen">
+      <div class="viewing-panel">
       </div>
       <button class="js-fullscreen-button right-buttons">
-        <i class="fa-solid fa-expand"></i>
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
       </button>
     </div>
 
