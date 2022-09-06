@@ -16,6 +16,9 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
   <link rel="stylesheet" href="css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     .player {
       background: black;
@@ -28,6 +31,7 @@
     .player .bottom-controls {
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
     .player .left-buttons {
       cursor: pointer;
@@ -37,16 +41,13 @@
       font-size: large;
       margin: 5px;
       height: 35px;
-      width: 20px;
     }
     .player .volume-btn {
       color: white;
       border: none;
       background: transparent;
+      margin-left: 5px;
       font-size: medium;
-      margin: 5px;
-      height: 35px;
-      width: 40px;
 
     }
     .player .right-buttons {
@@ -57,13 +58,26 @@
       background: transparent;
       height: 35px;
       font-size: large;
-      margin: 5px;
+      margin-left: 5px;
+
     }
     .screen {
     flex-grow: 1;
     }
     .player .viewing-panel {
     flex-grow: 1;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+
+    }
+
+    .player .progress {
+      font-family: 'Roboto';
+      color: grey;
+      flex-grow: 1;
     }
   </style>
 
@@ -87,6 +101,17 @@
         <i class="fa-solid fa-volume-high"></i>
       </button>
       <div class="viewing-panel">
+        <div>
+          <span class="js-current-time"></span>
+        </div>
+        <div  class="progress">
+          <div class="js-progress" style="background-color: grey;">
+            <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
+          </div>
+        </div>
+        <div>
+          <span class="js-duration"></span>
+        </div>
       </div>
       <button class="js-fullscreen-button right-buttons">
         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
