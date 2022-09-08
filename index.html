@@ -48,7 +48,6 @@
       background: transparent;
       margin-left: 5px;
       font-size: medium;
-
     }
     .player .right-buttons {
       cursor: pointer;
@@ -59,7 +58,6 @@
       height: 35px;
       font-size: large;
       margin-left: 5px;
-
     }
     .screen {
     flex-grow: 1;
@@ -71,13 +69,31 @@
     flex-direction: row;
     align-items: center;
     color: white;
-
     }
-
-    .player .progress {
-      font-family: 'Roboto';
-      color: grey;
+    .player .progress-bar{
+      height: 5px;
       flex-grow: 1;
+      margin: 10px;
+    }
+    .player .progress{
+      display: flex;
+      allign-item: center;
+    }
+    .player .slider{
+      background-color:red;
+      border-radius: 5px;
+      height: 5px;
+    }
+    .slider-indicator{
+      background-color:red;
+      border-radius: 50%;
+      border-color: white;
+      border-style: solid;
+      border-width: medium;
+      height: 8px;
+      width: 8px;
+      display: inline-block;
+      margin-top: -4px;
     }
   </style>
 
@@ -104,9 +120,10 @@
         <div>
           <span class="js-current-time"></span>
         </div>
-        <div  class="progress">
-          <div class="js-progress" style="background-color: grey;">
-            <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
+        <div class="progress-bar">
+          <div class="js-progress progress">
+            <div class="js-progress-slider slider"></div>
+            <div class="slider-indicator"></div>
           </div>
         </div>
         <div>
@@ -116,6 +133,7 @@
       <button class="js-fullscreen-button right-buttons">
         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
       </button>
+      <div class="duration-point">
     </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
