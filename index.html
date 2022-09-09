@@ -16,6 +16,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
   <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -78,7 +79,6 @@
     }
     .bottom-controls .progress{
       display: flex;
-      allign-item: center;
     }
     .bottom-controls .slider{
       background-color:red;
@@ -86,6 +86,8 @@
       height: 5px;
     }
     .bottom-controls .slider-indicator{
+      transition-property: opacity;
+      transition-duration: 300ms;
       opacity: 0;
       background-color: #f8104d;
       border-radius: 50%;
@@ -99,6 +101,8 @@
       margin-left: -5px;
     }
      .bottom-controls:hover .slider-indicator{
+      transition-property: opacity;
+      transition-duration: 300ms;
       opacity: 1;
       background-color: #f8104d;
       border-radius: 50%;
