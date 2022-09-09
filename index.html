@@ -33,7 +33,7 @@
       flex-direction: row;
       align-items: center;
     }
-    .player .left-buttons {
+    .bottom-controls .left-buttons {
       cursor: pointer;
       color: white;
       border: none;
@@ -43,14 +43,14 @@
       height: 35px;
       width: 30px;
     }
-    .player .volume-btn {
+    .bottom-controls .volume-btn {
       color: white;
       border: none;
       background: transparent;
       margin-left: 5px;
       font-size: medium;
     }
-    .player .right-buttons {
+    .bottom-controls .right-buttons {
       cursor: pointer;
       color: white;
       border: none;
@@ -63,7 +63,7 @@
     .screen {
     flex-grow: 1;
     }
-    .player .viewing-panel {
+    .bottom-controls .viewing-panel {
     flex-grow: 1;
     font-family: 'Roboto';
     display: flex;
@@ -71,21 +71,35 @@
     align-items: center;
     color: white;
     }
-    .player .progress-bar{
+    .bottom-controls .progress-bar{
       height: 5px;
       flex-grow: 1;
       margin: 10px;
     }
-    .player .progress{
+    .bottom-controls .progress{
       display: flex;
       allign-item: center;
     }
-    .player .slider{
+    .bottom-controls .slider{
       background-color:red;
       border-radius: 5px;
       height: 5px;
     }
-    .slider-indicator{
+    .bottom-controls .slider-indicator{
+      opacity: 0;
+      background-color: #f8104d;
+      border-radius: 50%;
+      border-color: white;
+      border-style: solid;
+      border-width: 2px;
+      height: 8px;
+      width: 8px;
+      display: inline-block;
+      margin-top: -3px;
+      margin-left: -5px;
+    }
+     .bottom-controls:hover .slider-indicator{
+      opacity: 1;
       background-color: #f8104d;
       border-radius: 50%;
       border-color: white;
@@ -147,6 +161,7 @@
       elementId: 'player',
     });
   </script>
+  </div>
   </div>
 
 </body>
