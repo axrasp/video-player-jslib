@@ -1,0 +1,78 @@
+  .player {
+    background: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .player .bottom-controls {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    align-items: center;
+  }
+  .bottom-controls .player-button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    background: transparent;
+    font-size: large;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+  }
+  .screen {
+  flex-grow: 1;
+  }
+  .bottom-controls .viewing-panel {
+  flex-grow: 1;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  }
+  .bottom-controls .progress-bar{
+    height: 5px;
+    flex-grow: 1;
+    margin: 10px;
+  }
+  .bottom-controls .progress{
+    display: flex;
+  }
+  .bottom-controls .slider{
+    background-color:red;
+    border-radius: 5px;
+    height: 5px;
+  }
+  .bottom-controls .slider-indicator{
+    transition-property: opacity;
+    transition-duration: 300ms;
+    opacity: 0;
+    background-color: #f8104d;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    margin-top: -3px;
+    margin-left: -5px;
+  }
+   .bottom-controls:hover .slider-indicator{
+    transition-property: opacity;
+    transition-duration: 300ms;
+    opacity: 1;
+    background-color: #f8104d;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    margin-top: -3px;
+    margin-left: -5px;
+  }
