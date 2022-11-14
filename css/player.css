@@ -1,4 +1,6 @@
   .player {
+    font-size: 16px;
+    line-height: normal;
     background: black;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     width: 800px;
@@ -64,3 +66,4 @@
    .bottom-controls:hover .slider-indicator{
     opacity: 1;
   }
+
