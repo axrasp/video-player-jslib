@@ -26,12 +26,12 @@
   flex-grow: 1;
   }
   .bottom-controls .viewing-panel {
-  flex-grow: 1;
-  font-family: 'Roboto';
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: white;
+    flex-grow: 1;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
   }
   .bottom-controls .progress-bar{
     height: 5px;
@@ -46,7 +46,7 @@
     border-radius: 5px;
     height: 5px;
   }
-  .bottom-controls .slider-indicator{
+  .bottom-controls:hover .slider-indicator {
     transition-property: opacity;
     transition-duration: 300ms;
     opacity: 0;
@@ -62,17 +62,5 @@
     margin-left: -5px;
   }
    .bottom-controls:hover .slider-indicator{
-    transition-property: opacity;
-    transition-duration: 300ms;
     opacity: 1;
-    background-color: #f8104d;
-    border-radius: 50%;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-    height: 8px;
-    width: 8px;
-    display: inline-block;
-    margin-top: -3px;
-    margin-left: -5px;
   }
